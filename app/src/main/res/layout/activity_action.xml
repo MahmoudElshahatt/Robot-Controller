@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <Button
+            android:id="@+id/btn_moveforward"
+            android:layout_width="124dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="70dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Forward"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_movebackward"
+            android:layout_width="124dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Backward"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_moveleft" />
+
+        <Button
+            android:id="@+id/btn_moveleft"
+            android:layout_width="124dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Left"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_moveright"
+            app:layout_constraintTop_toBottomOf="@+id/btn_moveforward" />
+
+        <Button
+            android:id="@+id/btn_moveright"
+            android:layout_width="124dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Right"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_moveleft"
+            app:layout_constraintEnd_toStartOf="@+id/btn_moveleft"
+            app:layout_constraintHorizontal_bias="0.44"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_moveleft" />
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="124dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Stop"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btn_movebackward"
+            app:layout_constraintStart_toStartOf="@+id/btn_movebackward"
+            app:layout_constraintTop_toBottomOf="@+id/btn_movebackward" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
