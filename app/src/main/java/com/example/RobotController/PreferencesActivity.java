@@ -16,7 +16,7 @@ public class PreferencesActivity extends PreferenceActivity implements OnSharedP
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActivityHelper.initialize(this);
-// Using this for compatibility with Android 2.2 devices
+
     }
 
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
@@ -47,7 +47,6 @@ public class PreferencesActivity extends PreferenceActivity implements OnSharedP
         Map<String, ?> keys = PreferenceManager.getDefaultSharedPreferences(this).getAll();
 
         for (Map.Entry<String, ?> entry : keys.entrySet()) {
-// Log.d("map values", entry.g,,etKey() + ": " + entry.getValue().toString());
             Preference pref = findPreference(entry.getKey());
             if (pref != null) {
                 pref.setSummary(entry.getValue().toString());

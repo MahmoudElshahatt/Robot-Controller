@@ -7,16 +7,10 @@ import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
-import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -114,52 +108,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
-    protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        switch (requestCode) {
-            case BT_ENABLE_REQUEST:
-                if (resultCode == RESULT_OK) {
-                    msg("Bluetooth Enabled successfully");
-                    new SearchDevices().execute();
-                } else {
-                    msg("Bluetooth couldn't be enabled");
-                }
-
-                break;
-            case SETTINGS:
-                SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-                String uuid = prefs.getString("prefUuid", "Null");
-                myUUID = UUID.fromString(uuid);
-                Log.d(TAG, "UUID: " + uuid);
-                String bufSize = prefs.getString("prefTextBuffer", "Null");
-                bufferSize = Integer.parseInt(bufSize);
-
-                String orientation = prefs.getString("prefOrientation", "Null");
-                Log.d(TAG, "Orientation: " + orientation);
-                if (orientation.equals("Landscape")) {
-                    setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-                } else if (orientation.equals("Portrait")) {
-                    setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-                } else if (orientation.equals("Auto")) {
-                    setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_FULL_SENSOR);
-                }
-                break;
-            default:
-                break;
-        }
-        super.onActivityResult(requestCode, resultCode, data);
-    }
-
 
     private void msg(String str) {
         Toast.makeText(getApplicationContext(), str, Toast.LENGTH_SHORT).show();
