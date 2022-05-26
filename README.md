@@ -3,7 +3,6 @@
 
 The app controls a rocket league robot by Bluetooth Module and Arduino Uno, You can search for available Bluetooth devices around you and connect with the Bluetooth module you choose, Then you can control the robot.
 
-</br>
 
 # Screenshots
 
