@@ -3,6 +3,8 @@
 
 The app controls a rocket league robot by Bluetooth Module and Arduino Uno, You can search for available Bluetooth devices around you and connect with the Bluetooth module you choose, Then you can control the robot.
 
+</br>
+
 # Screenshots
 
 <img src="https://user-images.githubusercontent.com/79477855/170486266-3a022a27-b5e1-4723-b4c4-de345f2401b0.jpeg" width="350" height="700"> <img src="https://user-images.githubusercontent.com/79477855/170486512-4a479b21-08a5-4816-95d6-492cf6b40f61.jpeg" width="350" height="700">
@@ -14,6 +16,6 @@ The app controls a rocket league robot by Bluetooth Module and Arduino Uno, You 
 * **Activity Lifecycle**.
 * **Shared Preferences**.
 * **Splash Screen**.
-* **AsyncTask **.
+* **AsyncTask**.
 
 
