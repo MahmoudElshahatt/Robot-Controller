@@ -3,18 +3,17 @@
 
 The app controls a rocket league robot by Bluetooth Module and Arduino Uno, you can search for available Bluetooth devices around you and connect with the Bluetooth module you choose, and start to control the robot..
 
-</br>
+# Screenshots
 
-# App Preview
+<img src="https://user-images.githubusercontent.com/79477855/170486266-3a022a27-b5e1-4723-b4c4-de345f2401b0.jpeg" width="350" height="700"> <img src="https://user-images.githubusercontent.com/79477855/170486512-4a479b21-08a5-4816-95d6-492cf6b40f61.jpeg" width="350" height="700">
 
-<img src="https://user-images.githubusercontent.com/79477855/148279722-3024e450-db90-4fb6-a22d-14b125f1a67d.jpg" width="350" height="700"> <img src="https://user-images.githubusercontent.com/79477855/148279585-2f897cb9-6511-440f-ba3e-70cccca1e38f.jpg" width="350" height="700">
-
-<img src="https://user-images.githubusercontent.com/79477855/148280306-975f391b-35bf-4a37-b5bd-fa98a2f41e4f.jpg" width="350" height="700"> 
+<img src="https://user-images.githubusercontent.com/79477855/170486594-9dd1358a-8aa0-4309-b3ac-f267f8b3ab01.jpeg" width="350" height="700"> <img src="https://user-images.githubusercontent.com/79477855/170486656-c95d25b2-0432-4887-8316-59a6b32fe211.jpeg" width="350" height="700"> 
 
 # Tech stack
-* **RecyclerView**.
-* **Simple Transition Animation**.
-* **Slider**.
-* **Glide**.
+* **ListView**.
+* **Activity Lifecycle**.
+* **Shared Preferences**.
+* **Splash Screen**.
+* **AsyncTask **.
 
 
